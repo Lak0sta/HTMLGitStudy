@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Таблица</title>
+    <style>
+    table {
+        width: 800px;
+        border-collapse: collapse;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    th, td {
+        padding: 8px;
+        margin: 20px;
+        border: black 2px solid;
+    }
+    th#1 {
+        text-align: left; 
+    }
+    </style>
 </head>
 <body>
-    <h1>Hello, world!!!</h1>
+    <table>
+        <caption><b>Результаты школьной спартакиады</b></caption>
+        <tr>
+            <th rowspan="3" style="text-align: left">Ученик</th>
+            <th colspan="4">Упражнение</th>
+        </tr>
+        <tr>
+            <th colspan="2">Прыжок в длину с места</th>
+            <th colspan="2">Бег на 1000 м</th>
+        </tr>
+        <tr>
+            <th>Результат, см</th>
+            <th>Оценка</th>
+            <th>Результат, с</th>
+            <th>Оценка</th>
+        </tr>
+        <tr>
+            <td style="text-align: left">Баутин Дима</td>
+            <td>197</td>
+            <td>5</td>
+            <td>220</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td style="text-align: left">Голубев Миша</td>
+            <td>178</td>
+            <td>4</td>
+            <td>263</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td id="1" style="text-align: left">Куликов Иван</td>
+            <td>159</td>
+            <td>3</td>
+            <td>306</td>
+            <td>3</td>
+        </tr>
+    </table>
 </body>
 </html>
